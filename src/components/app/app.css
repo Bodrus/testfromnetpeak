@@ -1,0 +1,8 @@
+.wraper {
+  max-width: 500px;
+  height: 500px;
+  background-color: rgb(202, 56, 56);
+  background-image: url(../../foto/backgraund.png);
+  margin: 0 auto;
+  border: 2px solid black;
+}

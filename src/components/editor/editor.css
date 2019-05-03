@@ -1,0 +1,17 @@
+.editor {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+}
+
+.textarea-bold {
+  font-weight: bold;
+}
+
+.textarea-normal {
+  font-weight: normal;
+}
+
+.textarea-light {
+  font-weight: 100;
+}
