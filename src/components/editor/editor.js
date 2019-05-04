@@ -24,7 +24,6 @@ export default class Editor extends React.Component {
     this.setState({ text: e.target.value });
   };
     
-    
   render() {
     const { position } = this.props;
     const newPosition = position + 80;
@@ -35,7 +34,6 @@ export default class Editor extends React.Component {
       btn: true,
       'btn-secondary': true,
     };
-
 
     const boldButtonClass = {
       ...sharedClasses,
@@ -61,13 +59,13 @@ export default class Editor extends React.Component {
     };
 
     return (
-      <div style={{ left:`${newPosition}px`, top:"60px" }} className='editor'>
+      <div style={{ left:`${newPosition}px`, top:"65px" }} className='editor'>
         <div className="form-group btn-group">   
             <button type="button" className={cn(boldButtonClass)} onClick={this.selectBold}>Bold</button>
             <button type="button" className={cn(normalButtonClass)} onClick={this.selectNormal}>Normal</button>
             <button type="button" className={cn(lightButtonClass)} onClick={this.selectLight}>light</button>
         </div>
-        <div className="form-group">
+        <div className="form-group btn-group f">
           <textarea className={cn(textareaClasses)} onChange={this.onChange} value={this.state.text} rows="1"></textarea>
         </div>
       </div>
