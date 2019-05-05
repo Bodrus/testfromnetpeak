@@ -19,3 +19,7 @@
 .btn-group button {
   margin-right: 2px;
 }
+
+.form-group textarea {
+  resize: none;
+}
