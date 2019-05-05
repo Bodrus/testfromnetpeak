@@ -32,7 +32,7 @@ export default class Editor extends React.Component {
 
     const sharedClasses = {
       btn: true,
-      'btn-secondary': true,
+      'btn-outline-secondary': true,
     };
 
     const boldButtonClass = {
@@ -43,7 +43,7 @@ export default class Editor extends React.Component {
 
     const normalButtonClass = {
       ...sharedClasses,
-      active: active === 'narmal',
+      active: active === 'normal',
       normalButton: active === 'bold', 
     };
 
@@ -65,7 +65,7 @@ export default class Editor extends React.Component {
             <button type="button" className={cn(normalButtonClass)} onClick={this.selectNormal}>Normal</button>
             <button type="button" className={cn(lightButtonClass)} onClick={this.selectLight}>light</button>
         </div>
-        <div className="form-group btn-group f">
+        <div className="form-group btn-group">
           <textarea className={cn(textareaClasses)} onChange={this.onChange} value={this.state.text} rows="1"></textarea>
         </div>
       </div>

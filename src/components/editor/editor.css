@@ -2,6 +2,8 @@
   width: 200px;
   height: 100px;
   position: absolute;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Параметры тени */
 }
 
 .textarea-bold {
@@ -17,9 +19,9 @@
 }
 
 .btn-group button {
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
-.form-group textarea {
+.btn-group textarea {
   resize: none;
 }
